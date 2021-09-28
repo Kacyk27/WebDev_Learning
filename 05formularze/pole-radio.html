@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <title>Pole radio</title>
+        <meta name="description" content="Pole radio, Etykiety, Fieldset."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+        
+        
+
+    </head>
+    <body style="background-color: darkkhaki;">
+
+        <!-- 
+            Pole radio   -   radio    - Ile masz lat?
+            Pole wyboru  -   checkbox - Jakie jest Twoje hobby?
+
+            fieldset - zbiór/zestaw pól
+            legend - opis dla fieldset
+            label - etykieta
+            
+            Atrybut checked
+        -->
+
+        <!--
+            Atrybuty w formularzach
+            
+            checked  //po odświeżeniu pole z tym atrybutem jest zaznaczone (np najczęściej wybierane opcje)
+            required //wymagane pole
+            autofocus  // od razu można wpisać wartość w takim polu
+            autocomplete  // autouzupełnianie
+            size  // rozmiar pola
+            maxlength // max ilość znaków do wpisania w polu
+            value  // wartość domyślna ustawiona dla pola
+            placeholder //szary opis pola, napis na szaro znika gdy użytkownik zacznie pisać.
+
+        -->
+
+        <form action="ankieta.php">
+            <fieldset>
+                <legend>Ile masz lat?</legend>
+                <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa1" value="7-18"><label for="kategoria_wiekowa1">7-18</label><br>
+                <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa2" value="19-29"><label for="kategoria_wiekowa2">19-29</label><br>
+                <input type="radio" name="kategoria_wiekowa" id="kategoria_wiekowa3" value="30-39"><label for="kategoria_wiekowa3">30-39</label><br>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Jakie masz hobby?</legend>
+
+                <input type="checkbox" name="hobby[]" id="czytanie" value="czytanie"> <label for="czytanie">czytanie</label>
+                <input type="checkbox" name="hobby[]" id="plywanie" value="plywanie"> <label for="plywanie">pływanie</label>
+                <input type="checkbox" name="hobby[]" id="gry_komputerowe" value="gry_komputerowe"> <label for="gry_komputerowe">gry komputerowe</label>
+            </fieldset>
+
+            Ilość jednostek: <input type="text" autocomplete="off" size="4", maxlength="1" placeholder="1-9" value="5" autofocus> szt. <br>
+            Hasło: <input type="password" placeholder="Minimum 6 znaków."> <br>
+
+            Nr domu: <input type="text" required size="4"> <br>
+            Nr mieszkania: <input type="text" size="4"> <br>
+            <input type="submit" value="Wyślij"> <br>
+
+
+        </form>
+
+    </body>
+</html>

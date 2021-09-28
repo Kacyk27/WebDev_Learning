@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <title>Pre, code i var</title>
+        <meta name="description" content="Dalsza nauka znaczników."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+        
+        
+
+    </head>
+    <body style="background-color: darkkhaki;">
+
+<pre>
+<code>
+    #include &lt;iostream>
+    #include &lt;vector>
+    #include &lt;typeinfo>
+    
+    using namespace std;
+    
+    int main()
+    {
+    
+        vector&lt;int> wholeNumbers {20, 10, 4, -3, 25};
+    
+        double nrOfPeople = 20.5;
+    
+        cout &lt;&lt; nrOfPeople &lt;&lt; endl;
+        cout &lt;&lt; typeid(nrOfPeople).name() &lt;&lt; endl;
+    
+    
+        for(auto it = wholeNumbers.begin(); it != wholeNumbers.end(); it++)
+        {
+            cout &lt;&lt; *it &lt;&lt; endl;
+        }
+    
+    
+        return 0;
+    }
+</code>
+</pre>
+
+        <p>Liczba 70 jest o 40% większa od liczby <var>c</var>. Jaką wartość ma liczba <var>c</var>?</p>
+
+
+    </body>
+</html>
