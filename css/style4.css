@@ -1,0 +1,65 @@
+body
+{
+    background-color: burlywood;
+    margin: 0px;
+}
+
+div
+{
+    margin: 20px;
+}
+
+.none {border-style: none;}
+.dotted {border-style: dotted;}
+.solid {border-style: solid;}
+.dashed {border-style: dashed;}
+.double {border-style: double;}
+.groove {border-style: groove;}
+.ridge {border-style: ridge;}
+.inset {border-style: inset;}
+.outset {border-style: outset;}
+.mix 
+{
+    width: 700px;
+    border-bottom: 5px solid darkgreen;
+}
+.definicja1
+{
+    border-left: 5px solid red;
+    background-color: darkgrey;
+}
+
+.definicja2
+{
+    border: 1px dotted brown;
+    border-left: 3px groove blue;
+}
+
+.definicja3
+{
+    border-style: double dotted groove solid;
+    width: 500px;
+    text-align: center;
+}
+
+.definicja
+{
+    border-left: 5px solid crimson;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+input
+{
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.dymek
+{
+    background-color: aqua;
+    width: 300px;
+    text-align: center;
+    border-radius: 100px 50px;
+    padding: 20px;
+}

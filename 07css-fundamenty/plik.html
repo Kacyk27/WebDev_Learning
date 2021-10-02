@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <title>CSS1</title>
+        <meta name="description" content="Plac zabaw do CSS nr. 1"> <!--Must have-->
+
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+        <link rel="stylesheet" href="../css/style.css">
+
+        <style>
+            p
+            {
+                color:firebrick;
+            }
+        </style>
+        
+        
+
+    </head>
+    <body style="background-color: darkkhaki;">
+
+        <!--
+            CSS - Cascade Style Sheets
+
+        -->
+
+        <p style="color: darkslateblue;">To jest testowy tekst 1</p>
+        <p>To jest testowy tekst 2</p>
+        <p>To jest testowy tekst 3</p>
+        <p>To jest testowy tekst 4</p>
+        <p>To jest testowy tekst 5</p>
+
+
+        <table border="1">
+            <caption>Video kursy</caption>
+            <thead>
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Cena(zł)</th>
+                    <th>Kategoria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C++</td><td>49</td><td rowspan="3">Programowanie</td>
+                </tr>
+                <tr>
+                    <td>PHP</td><td>39</td>
+                </tr>
+                <tr>
+                    <td>Java</td><td>45</td>
+                </tr>
+                <tr>
+                    <td>HTML5</td><td>49</td><td rowspan="4">WebDeveloping</td>
+                </tr>
+                <tr>
+                    <td>CSS</td><td>39</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td><td>45</td>
+                </tr>
+                <tr>
+                    <td>Node.js</td><td>50</td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">Kursy w języku polskim</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><br><br>
+
+    </body>
+</html>

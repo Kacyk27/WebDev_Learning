@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <title>Selektory powtórka</title>
+        <meta name="description" content="Powtórka materiału."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+        
+        <link rel="stylesheet" href="../css/style5.css">
+
+    </head>
+    <body>
+
+        <table>
+            <caption>Selektory</caption>
+            <tr>
+                <th>Selektor</th>
+                <th>Wyjaśnienie</th>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>Wybierz wszystkie elementy o nazwie <b>p</b></td>
+            </tr>
+            <tr>
+                <td>.foo</td>
+                <td>Wybierz wszystkie elementy których class ="<b>foo</b>"</td>
+            </tr>
+        </table>
+
+        <br><br><br><br><br>
+        <div>
+            <p class="foo">Foo</p>
+            <p class="foo">Foo</p>
+            <p>not foo</p>
+            <div class="foo">not p, foo</div>
+        </div>
+        <p>Poza divem.</p>
+        <div>Div samotny</div>
+
+    </body>
+</html>

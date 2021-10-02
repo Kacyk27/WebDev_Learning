@@ -1,0 +1,36 @@
+body
+{
+    background-color: burlywood;
+    margin: 0px;
+    color: gray;
+}
+
+div
+{
+    color: indigo;
+    font-weight: bold;
+}
+
+.type1
+{
+    background-color: cornflowerblue;
+    color: lawngreen;
+    font-size: 35px;
+}
+
+.type2
+{
+    background-color: crimson;
+    color: black;
+}
+
+#test
+{
+    color: red;
+    font-weight: unset;
+}
+
+#test p
+{
+    color: black;
+}

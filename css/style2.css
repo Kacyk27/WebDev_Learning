@@ -1,0 +1,48 @@
+body
+{
+    background-color: silver;
+    margin: 0%;
+}
+
+div
+{
+    background-color: darkorchid;
+}
+
+span
+{
+    background-color: darkturquoise;
+}
+
+.text
+{
+    width: 500px;
+    text-align: center;
+}
+
+#unique1
+{
+    text-align: center;
+}
+
+.type1
+{
+    background-color: chartreuse;
+    display: block;
+}
+
+.type2
+{
+    background-color: crimson;
+    display: inline;
+
+}
+
+.type3
+{
+    background-color: deeppink;
+    display: inline-block;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <title>Tabele</title>
+        <meta name="description" content="Wstęp do tworzenia tabeli w HTML5."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+        
+        
+
+    </head>
+    <body style="background-color: darkkhaki;">
+
+        <!--
+            Tabela - zestawienie danych rozmieszczonych w rubrykach.
+
+            tr   table row (wiersz)
+            td   table data  (informacja w tabeli)
+            th   table header
+            caption
+            thead - zaznaczamy tym nagłówek tabeli
+            tbody - zaznaczamy tym treść tabeli
+
+            span - rozpiętość
+            colspan - rozpiętość na kolumny
+            rowspan - rozpiętość na wiersze
+        -->
+
+
+        <table border="1">
+            <caption>Video kursy</caption>
+            <thead>
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Cena(zł)</th>
+                    <th>Kategoria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C++</td><td>49</td><td rowspan="3">Programowanie</td>
+                </tr>
+                <tr>
+                    <td>PHP</td><td>39</td>
+                </tr>
+                <tr>
+                    <td>Java</td><td>45</td>
+                </tr>
+                <tr>
+                    <td>HTML5</td><td>49</td><td rowspan="4">WebDeveloping</td>
+                </tr>
+                <tr>
+                    <td>CSS</td><td>39</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td><td>45</td>
+                </tr>
+                <tr>
+                    <td>Node.js</td><td>50</td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">Kursy w języku polskim</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><br><br>
+
+        <!--
+            Stwórz tabelę z pomocą EMMET zawierającą 3 wiersze i 5 kolumn
+        -->
+        <table border="1">
+            <caption>Tabela testowa</caption>
+            <tr>
+                <td rowspan="3">Programowanie</td><td>C++</td><td>10</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td rowspan="4">WebDeveloping</td><td>HTML5</td><td>49</td>
+            </tr>
+            <tr>
+                <td>CSS</td><td>39</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td><td>40</td>
+            </tr>
+            <tr>
+                <td>Node.js</td><td>100</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">Ceny kursów</td>
+            </tr>
+
+        </table>
+
+
+    </body>
+</html>

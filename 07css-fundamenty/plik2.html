@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <title>CSS Part 3</title>
+        <meta name="description" content="Różnice pomiędzy div i span."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+        
+        <link rel="stylesheet" href="/css/style2.css">
+
+    </head>
+    <body>
+
+        <!--
+            div                 vs       span
+            division (podział)           rozpiętość/zakres
+
+            block                        inline
+
+            display: block   // do końca strony
+                     inline  // w linii, nie dodaje entera
+                     inline-block  // blok w linii, można ustawiać szerokość.
+            
+            width
+            height
+
+            div i span to tagi neutralne. Różnica polega na tym że SPAN zaznacza tak jakby tło
+            tylko słów/wyrażenia które obejmuje, a DIV leci do końca strony w prawo/lewo
+        -->
+
+        <div id="unique1">
+            Dudek Kacper <br>
+                stan cywilny: <span title="Już niedługo to się zmieni.">kawaler</span>
+        </div>
+        <div class="text">Testowy tekst1</div>
+        <div class="text">Testowy tekst2</div>
+        <div class="text">Testowy tekst3</div>
+        <div class="text">Testowy tekst4</div>
+        <div class="text">Testowy tekst5</div>
+
+
+        <div class="type1">block</div>
+        <div class="type1">block</div>
+        <div class="type1">block</div>
+
+        <div class="type2">inline</div>
+        <div class="type2">inline</div>
+        <div class="type2">inline</div>
+
+        <br>
+
+        <div class="type3">inline-block</div>
+        <div class="type3">inline-block</div>
+        <div class="type3">inline-block</div>
+
+        <p class="pierwsza-nazwa druga-nazwa"></p>
+        <p id="nazwaId"></p>
+
+        <div class="divova-klasa"></div>
+
+        <b><span class="nazwa-klasy"></span></b>
+
+        <ul>
+            <li class="type"></li>
+            <li class="type"></li>
+            <li class="type"></li>
+            <li class="type"></li>
+            <li class="type"></li>
+        </ul>
+
+        <table>
+            <tr class="row">
+                <td class="column"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr class="row">
+                <td class="column"></td>
+                <td class="column"></td>
+                <td class="column"></td>
+                <td class="column"></td>
+                <td class="column"></td>
+            </tr>
+            <tr class="row">
+                <td class="column"></td>
+                <td class="column"></td>
+                <td class="column"></td>
+                <td class="column"></td>
+                <td class="column"></td>
+            </tr>
+            <tr class="row">
+                <td class="column"></td>
+                <td class="column"></td>
+                <td class="column"></td>
+                <td class="column"></td>
+                <td class="column"></td>
+            </tr>
+            <tr class="row">
+                <td class="column"></td>
+                <td class="column"></td>
+                <td class="column"></td>
+                <td class="column"></td>
+                <td class="column"></td>
+            </tr>
+        </table>
+
+
+    </body>
+</html>

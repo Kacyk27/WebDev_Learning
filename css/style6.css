@@ -1,0 +1,32 @@
+body
+{
+    background-color: blanchedalmond;
+    margin: 0px;
+}
+
+#menu_strony a:link, #menu_strony a:visited
+{
+    text-decoration: none;
+    color: #025954;
+    border: 1px solid cornflowerblue;
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 50px;
+
+}
+
+#menu_strony a:hover
+{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#menu_strony a:active
+{
+    background-color: teal;
+}
+a:link
+{
+    text-decoration: none;
+}

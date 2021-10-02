@@ -1,0 +1,42 @@
+body
+{
+    background-color: darkgrey;
+    margin: 0px;
+}
+
+div p
+{
+    color: darkmagenta;
+}
+
+div p.foo
+{
+    color: darkolivegreen;
+}
+
+.foo
+{
+    color: darkred;
+}
+
+table
+{
+    margin: 10px;
+    border-collapse: collapse;
+
+}
+
+table td
+{
+
+    padding: 10px;
+}
+caption, table th
+{
+    padding: 5px;
+    font-size: 24px;
+}
+table tr
+{
+    border-bottom: 1px solid black;
+}

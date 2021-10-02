@@ -1,0 +1,31 @@
+.center
+{
+    text-align: center;
+}
+
+.input-text
+{
+    color: blue;
+    width: 100px;
+    height: 25px;
+}
+
+#adres-domowy
+{
+    color:darkgreen;
+}
+
+#zamowienie .input-text
+{
+    color: darkorchid;
+}
+
+#koszyk .input-text
+{
+    color: darkorange;
+}
+
+.larger
+{
+    font-size: larger;
+}

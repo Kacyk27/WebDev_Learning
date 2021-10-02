@@ -1,0 +1,21 @@
+body
+{
+    background-color: cornflowerblue;
+    margin: 0px;
+}
+
+/*ul
+{
+    list-style-image: url("../images/tick.png");
+}
+*/
+ul
+{
+    list-style-type: none;
+}
+
+ul li::before
+{
+    content: "\2714\00A0";
+    color: blue;
+}

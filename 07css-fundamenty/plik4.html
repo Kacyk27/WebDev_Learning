@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <title>Krawędzie</title>
+        <meta name="description" content="Obramowania wokół elementów."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+        
+        <link rel="stylesheet" href="../css/style4.css">
+
+    </head>
+    <body>
+
+        <!--
+            border: grubość styl kolor
+            lub
+            border-kierunek: grubość styl kolor
+
+            reguła zegarkowa:
+            border-style: 1wartosc    --ustala wszystkim
+            border-style 1wart 2wart  -- 1 ustala dla gory i dolu, 2 dla lewej i prawej
+            border-style 1wart 2wart 3wart 4wart -- gora prawo dol lewo
+        -->
+
+        <div class="none">Brak obramowania: none</div>
+        <div class="solid">Solidna linia: solid</div>
+        <div class="dotted">Seria kropek: dotted</div>
+        <div class="dashed">Seria kresek: dashed</div>
+        <div class="double">Podwójna linia: double</div>
+        <div class="groove">Wcięcie, efekt wyrzeźbienia: groove</div>
+        <div class="ridge">Odwrotność groove: ridge</div>
+        <div class="inset">Efekt "zapadnięcia": inset</div>
+        <div class="outset">Efekt wysunięcia: outset</div>
+        <div class="mix">Mix - można mixować wszystko.</div>
+        <div class="definicja1">Świat jest okrągły!!!</div>
+        <div class="definicja2">Świat jest okrągły!!!</div>
+        <div class="definicja3">Ostateczna definicja</div>
+
+
+        <!--
+            ZAOKRĄGLANIE KRAWĘDZI:
+            border-radius - promień obramowania
+            można mieszać wartości, zaczyna od lewego górnego i jak zegar
+        -->
+
+        <div class="definicja">Ten tekst ma zaokrągloną krawędź</div>
+
+        <input type="text"><input type="text"><input type="text">
+
+        <div class="dymek">To jest dymeczek</div>
+
+    </body>
+</html>

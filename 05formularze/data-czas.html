@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <title>Data i czas</title>
+        <meta name="description" content="Pobieranie daty i czasu od użytkownika za pomocą inputu."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+        
+        
+
+    </head>
+    <body style="background-color: darkkhaki;">
+
+        <!--
+            date, time
+            min, max
+        -->
+
+        <form>
+            <input type="date" min="2020-01-20" max="2020-01-30" value="2020-01-20">
+            <input type="time">
+        </form>
+    <br><br><br><br><br>
+        Zadanie
+        <br><br><br>
+        <form action="kontakt.php" method="POST">
+            <fieldset>
+                <legend>Pytanie do użytkownika</legend>
+                Kiedy mamy wysłać napisaną przez Ciebie wiadomość? <br>
+                <input type="date" min="2021-09-29" max="2021-12-31"> <br>
+                <input type="time">
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -4,15 +4,35 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
         <title>Formularz kontaktowy</title>
-        <meta name="description" content="Ćwiczenie polegające na utworzeniu formularza kontaktowego."> <!--Must have-->
+        <meta name="description" content="Ćwiczenie polegające na stworzeniu formularza kontaktowego, występującego
+        niemalże na każdej stronie internetowej."> <!--Must have-->
         <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
         <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
         <meta name="author" content="Kacper Dudek"> <!--Must have-->
         
         
-
     </head>
     <body style="background-color: darkkhaki;">
+
+        <!--
+            Stwórz formularz kontaktowy na stronie. Zapytaj się o:
+            1)email
+            2)imię
+            3)temat
+            4)treść maila
+        -->
+
+        <form action="kontakt.php" method="POST">
+            <fieldset>
+                <legend>Skontaktuj się z nami</legend>
+                E-mail: <input type="email" name="email" placeholder="@" id="email" required autofocus> <br>
+                Imię: <input type="text" name="imie" required> <br><br>
+                Temat: <input type="text" name="temat" required> <br>
+                <br>
+                Treść: <br> <textarea name="email_content" id="email_content" cols="30" rows="10"></textarea> <br>
+                <input type="submit" value="Wyślij">
+            </fieldset>
+        </form>
 
 
     </body>
