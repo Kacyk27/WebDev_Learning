@@ -1,0 +1,19 @@
+body
+{
+    background-color: darkgray;
+    margin: 0;
+}
+
+[data-title]
+{
+    cursor: help;
+}
+
+[data-title]:hover::after
+{
+    content: attr(data-title);
+    background-color: rgba(0, 100, 0, 0.378);
+    padding: 15px;
+    position: absolute;
+    border-radius: 20px;
+}

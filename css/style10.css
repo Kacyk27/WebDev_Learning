@@ -1,0 +1,25 @@
+body
+{
+    background-color: black;
+    background-image: url("../images/cosmos3.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    
+}
+
+div
+{
+    font-family: Verdana;
+    background-color: darkgrey;
+    color: darkblue;
+    text-decoration: none;
+    word-spacing: normal;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: 1.6em;
+    font-size: 1em;
+
+}
+

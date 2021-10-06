@@ -1,0 +1,46 @@
+body
+{
+    background-color: burlywood;
+    margin: 0;
+    padding: 0;
+}
+
+span.data
+{
+    position: absolute;
+    right: 10px;
+}
+
+div.menu_dolne
+{
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    background-color: cadetblue;
+    bottom: 0px;
+}
+
+div.news
+{
+    position: relative;
+    background-color: chocolate;
+    margin: 0px auto;
+    width: 300px;
+    
+}
+
+.kwadracik
+{
+    position: absolute;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+}
+
+.tekst
+{
+    background-color: coral;
+    width: 400px;
+    height: 400px;
+    overflow: auto;
+}

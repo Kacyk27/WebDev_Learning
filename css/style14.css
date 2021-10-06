@@ -1,0 +1,32 @@
+body
+{
+    background-color: burlywood;
+    text-align: justify;
+    margin: 0;
+}
+
+div.tekst
+{
+    background-color: cornflowerblue;
+    padding: 50px;
+    text-align: justify;
+    margin: 40px;
+    border: 3px solid black;
+    width: 200px;
+    
+}
+
+div#opakowanie
+{
+    width: 386px;  /* 500+100+6+100 */
+    background-color: crimson;
+    border: 1px double greenyellow;
+    float: left; /*Efekt, gdzie tekst z określonej strony 'przytula' się do obiektu,
+                    np. zwykły tekst z body może stać obok takiego unoszącego się diva.
+                    Jeśli zabraknie miejsca - wyrzuci go na dół, a nie postawi obok.*/
+}
+
+div#kontener
+{
+    width: 776px;
+}

@@ -1,0 +1,37 @@
+body
+{
+    background-color: burlywood;
+    margin: 0;
+}
+
+.przyklad
+{
+    white-space: pre-line;
+    text-align: justify;
+    text-transform: c;
+
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+input
+{
+    text-transform: capitalize;
+}
+
+[data-help]
+{
+    padding: 10px;
+    cursor: help;
+    text-decoration: underline dotted crimson;
+
+}
+
+[data-help]:hover::after
+{   
+    border-radius: 20px;
+    content: attr(data-help);
+    background-color: chocolate;
+    padding: 15px;
+    position: absolute;
+}
