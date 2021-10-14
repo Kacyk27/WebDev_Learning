@@ -1,0 +1,136 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0px;
+
+}
+
+body
+{
+    background-color: cornflowerblue;
+    background-image: url('../images/background1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a
+{
+    color: crimson;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: darkmagenta;
+    text-decoration: underline;
+}
+
+#kontener
+{
+    height: 163px;
+    border: 5px solid cornflowerblue;
+    width: 1004px;
+    margin: 0px auto;
+    background-color: rgb(62, 62, 63);
+    text-align: center;
+}
+
+img.logo
+{
+    margin: 0px;
+    border: 0px;
+    float: left;
+}
+
+
+#kontakt_box
+{
+    position: absolute;
+    text-align: left;
+    margin-left: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    top: 20px;
+    right: 40px;
+    color: #FFFF;
+}
+
+#gorne_menu
+{
+    position: relative;
+    left: 25px;
+    top: 150px;
+    margin: 0px auto;
+}
+
+#wlasciwe_gorne_menu li
+{
+    list-style-type: none;
+    float: left;
+    
+}
+#wlasciwe_gorne_menu li a
+{
+    background-image: url('../images/cosmos3.jpg');
+    height: 40px;
+    padding: 0px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+#wlasciwe_gorne_menu li a:hover
+{
+    color: yellowgreen;
+    background-image: url('../images/cosmos4.jpg');
+}
+/* Koniec menu górnego, przechodzimy niżej */
+
+#srodkowe_menu
+{
+
+
+    background-image: url('../images/cosmos.jpg');
+    height: 25px;
+    width: 750px;
+    margin: 0px auto;
+
+
+}
+
+#srodkowe_menu ul li
+{
+    list-style-type: none;
+    float: left;
+    padding: 0px 10px;
+
+}
+
+#srodkowe_menu ul li a
+{
+    color: teal;
+}
+
+#srodkowe_menu ul li a:hover
+{
+color: darkviolet;
+}
+
+.odstepnik
+{
+    color: teal;
+}
+
+#srodkowe_menu #pierwszy_poziom
+{
+    margin-left: 50px;
+}
+
+/* MENU ROZWIJANE */
+
+#pierwszy_poziom li .drugi_poziom
+{
+    display: none;
+}
