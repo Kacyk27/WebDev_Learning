@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <title>Day05</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+        
+        <style>
+            a {
+                font-size: 2rem;
+                letter-spacing: 5px;
+            }
+
+            /* a + a bierze tylko drugie a. */
+            a + a {
+                text-decoration: none;
+            }
+            .second:hover {
+                text-decoration: underline;
+                color: tomato;
+                font-weight: bold;
+            }
+
+            div {
+                text-align: center;
+                text-transform: capitalize;
+            }
+            
+            p {
+                font-size: 20px;
+                line-height: 34px;
+                /* domyślnie line-height to 115-120% fonta. (przy 120% 10% fonta idzie na dół i 10 na górę. font size - 20px, od góry daje 2 px i dołu 2 px) */
+                text-align: center;
+            }
+
+            .first {
+                text-indent: 50px;
+            }
+
+            .last {
+                text-indent: 2rem;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <!-- Font szeryfowy - upiększony, z ogonkami, etc. (np. Times New Roman)
+        Bezszeryfowe - proste fonty. -->
+
+        <div>
+            <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae animi consequatur, accusantium natus cum voluptas aspernatur voluptates? Qui numquam adipisci, incidunt doloribus cumque aliquid corrupti animi maxime exercitationem quam temporibus!</p>
+
+            <p class="last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae animi consequatur, accusantium natus cum voluptas aspernatur voluptates? Qui numquam adipisci, incidunt doloribus cumque aliquid corrupti animi maxime exercitationem quam temporibus!</p>
+        </div>
+        <a href="#">Hiperłącze nr.1</a>
+        <a href="#" class="second">Hiperłącze nr. 2</a>
+
+
+
+    </body>
+</html>

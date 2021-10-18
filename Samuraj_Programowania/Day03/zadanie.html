@@ -13,40 +13,46 @@
         <meta name="author" content="Kacper Dudek"> <!--Must have-->
         
         <style>
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-                margin: 50px;
-                color: aquamarine;
-                background-color: darkmagenta;
-            }
+            /*  dodawanie sprawia że ten drugi selektor przyjmie określone cechy. */
 
-            h3 {
-                font-size: 40px;
+            body {
+                background-color: darkslategray;
+                color: white;
+            }
+            div + div {
+                color: yellow;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p+p {
+                color: red;
             }
         </style>
-        
 
     </head>
     <body>
-        <h1>nagłówek 1</h1>
+        <!-- <div>
+            <p>Tekst 1</p>
+            <p>Tekst 2</p>
+        </div>
+        <div>
+            <p>Tekst 3</p>
+            <p>Tekst 4</p>
+        </div> -->
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Voluptas impedit quos accusamus velit odit eum ex debitis dolor, 
-            necessitatibus amet minus unde doloremque perferendis aspernatur 
-            quas est nihil officiis quae.
-        </p>
+        <div>
+            <p>Tekst 1</p>
+            <p>Tekst 2</p>
+        </div>
+        <p>Tekst <span>5</span></p>
+        <p>Tekst 6</p>
+        <div>
+            <p>Tekst 3</p>
+            <p>Tekst 4</p>
+            <p>Tekst 7</p>
+        </div>
 
-        <h2>nagłówek2</h2>
-        <h3>nagłówek3</h3>
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Voluptas impedit quos accusamus velit odit eum ex debitis dolor, 
-            necessitatibus amet minus unde doloremque perferendis aspernatur 
-            quas est nihil officiis quae.
-        </p>
-        
-        <button>Przycisk</button>
 
-        <a href="#">Link (hiperłącze)</a>
+
+
     </body>
 </html>
