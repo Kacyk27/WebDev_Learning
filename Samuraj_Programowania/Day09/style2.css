@@ -1,0 +1,34 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: #555;
+    /* overflow: hidden; */
+}
+
+.item1 {
+    width: 50%;
+    min-height: 500px;
+    background-color: royalblue;
+    float: left;
+    border: 10px solid red;
+}
+
+.item2 {
+    min-height: 500px;
+    width: 30%;
+    background-color: darkgoldenrod;
+    padding-left: 40px;
+    float: left;
+}
+
+.item3 {
+    min-height: 500px;
+    width: 20%;
+    background-color: darkcyan;
+    float: left;
+}

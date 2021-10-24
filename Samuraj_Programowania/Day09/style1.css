@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 120vh;
+}
+
+nav {
+    font-size: 0px;
+    /* powyższe do zakomentowania jeśli nie zadziała */
+}
+
+/* Jeśli strona jest duża i ma pasek używać % zamiast vw/vh, inaczej rozkrzaczy stronę. */
+/* Jednostka % zwyczajnie wlicza pasek a vh/vw nie wlicza go */
+nav div.logo {
+    width: 20%;
+    margin-right: 10%;
+    height: 40px;
+    background-color: brown;
+    float: left;
+}
+
+nav ul {
+    height: 40px;
+    width: 70%;
+    background-color: darkcyan;
+    float: left;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    font-size: 26px;
+
+}
