@@ -1,0 +1,42 @@
+/* Powyżej 1600px czyli 1601 i więcej. */
+
+body {
+    background-color: rgb(255, 0, 0);
+}
+
+div {
+    font-size: 60px;
+    color: black;
+}
+div.s1 {display: block;}
+div.s2 {display: none;}
+div.s3 {display: none;}
+
+@media (max-width: 1600px) {
+    body {
+        background-color: rgb(255, 255, 0);
+    }
+    div.s1 {display: none;}
+    div.s2 {display: block;}
+}
+
+@media (max-width: 1024px) {
+    body {
+        background-color: rgb(0, 255, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(100, 50, 100);
+    }
+    /* div.s1 {display: none;} */
+    div.s2 {display: none;}
+    div.s3 {display: block;}
+}
+
+@media (max-width: 360px) {
+    body {
+        background-color: rgb(50, 50, 100);
+    }
+}

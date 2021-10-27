@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Day12</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+        <!-- Favicon dodajemy favicon.ico 32x32, dodajemy do folderu głównego, ikona na karcie. -->
+        <link rel="icon" href="favicon.png">
+
+        <!-- Dobrze na FB -->
+
+        <meta name='url' content='http://nazwadomeny.pl'>
+        <meta property="og:title" content="Najlepsze cośtam cośtam w mieście X">
+        <meta property="http://nazwadomeny.pl/fbook.png">
+        <!-- Obrazek 1200 na 640 dla FB -->
+        <meta property="og:description" content="Projekt od podstaw do pierwszej pray jako front-end developer">
+        <meta property="og:type" content="article">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            .bg {
+                height: 50vh;
+                width: 50vw;
+                border: 14px solid red;
+                padding: 30px;
+                margin-top: 30px;
+                
+                background-image: url("../images/kwiatek.JPG");
+                background-repeat: no-repeat;
+                /* background-position: 10%; */
+                /* background-position: bottom 50% right 20%; */
+                background-position: 20% 20%;
+
+                background-color: aquamarine; 
+                /* bg-color zawsze wypełnia całość */
+                background-image: url("../images/ptak_maly.JPG"), url("../images/kwiatek.JPG");
+                background-position: left 0 bottom 0, top 50% left 50%;
+                /* w przypadku przesunięcia i uzycia bg-repeat obrazek po prostu zmieni miejsce w którym zaczyna powtarzać */
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h2>#4 Pozycja obrazka</h2>
+        <div class="bg"></div>
+
+    </body>
+</html>
