@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Strona do nauki</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+
+            <style>
+
+                html {
+                    font-family: roboto, arial, sans-serif;
+                }
+
+                span {
+                    position: absolute;
+                    left: 50px;
+                    top: 70px;
+                    color: white;
+                    padding: 20px 30px;
+                    background-color: darkred;
+                    cursor: pointer;
+                }
+
+                div {
+                    position: absolute;
+                    top: 90%;
+                    left: 10%;
+                    width: 0;
+                    height: 0;
+                    background-color: brown;
+                    transition: 1s;
+                }
+                div:nth-of-type(2) {
+                    transition-delay: 0.2s;
+                }
+                div:nth-of-type(3) {
+                    transition-delay: 0.3s;
+                }
+                div:nth-of-type(4) {
+                    transition-delay: 0.4s;
+                }
+                div:nth-of-type(5) {
+                    transition-delay: 0.5s;
+                }
+                div:nth-of-type(6) {
+                    transition-delay: 0.6s;
+                }
+                
+
+                span:hover~div:nth-of-type(1) {
+                    top: 50%;
+                    left: 50%;
+                    width: 50vh;
+                    height: 30vh;
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+                }
+
+                span:hover~div:nth-of-type(2) {
+                    top: calc(50% - 15vh);
+                    left: 50%;
+                    width: calc(50vh/1.41);
+                    height: calc(50vh/1.41);
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    background-color: black;
+                }
+
+                span:hover~div:nth-of-type(3) {
+                    top: calc(50% + 7.5vh);
+                    left: 50%;
+                    width: 10vh;
+                    height: 15vh;
+                    transform: translate(-50%, -50%);
+                    background-color: gray;
+                    z-index: 2;
+                }
+
+                span:hover~div:nth-of-type(4) {
+                    top: calc(50% - 25vh);
+                    left: calc(50% + 15vh);
+                    width: 10vh;
+                    height: 15vh;
+                    transform: translate(-50%, -50%);
+                    background-color:#333;
+                    z-index: -1;
+                }
+
+                span:hover~div:nth-of-type(5) {
+                    top: 48%;
+                    left: 62%;
+                    width: 10vh;
+                    height: 10vh;
+                    transform: translate(-50%, -50%);
+                    background-color: yellow;
+                    z-index: 2;
+                }
+
+                span:hover~div:nth-of-type(6) {
+                    top: 48%;
+                    left: 40%;
+                    width: 10vh;
+                    height: 10vh;
+                    transform: translate(-50%, -50%);
+                    background-color: yellow;
+                    z-index: 2;
+                }
+
+
+
+
+            </style>
+
+    </head>
+    <body>
+        <span>BUDUJEMY</span>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </body>
+</html>

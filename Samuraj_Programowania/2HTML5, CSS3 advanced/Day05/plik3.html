@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Strona do nauki</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+        <style>
+            button {
+                position: relative;
+                display: block;
+                margin: 100px auto;
+                font-size: 40px;
+                line-height: 70px;
+                padding: 0 40px;
+                background-color: white;
+                border: 3px solid black;
+                overflow: hidden;
+            }
+
+            button::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0px;
+                border-left: 10px solid black;
+                border-top: 35px solid transparent;
+                border-bottom: 35px solid transparent;
+                transition: 0.4s;
+            }
+
+            button:hover::before {
+                /* left: 0; */
+                border-left: 30px solid black;
+            }
+
+            button::after {
+                content: "";
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: red;
+                transform: translateY(-50%) scale(0);
+                transition: 0.4s;
+            }
+            button:hover::after {
+                transform: translateY(-50%) scale(1);
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <button>Przycisk</button>
+
+
+    </body>
+</html>

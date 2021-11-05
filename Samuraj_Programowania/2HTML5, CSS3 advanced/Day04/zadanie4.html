@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Strona do nauki</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                html {
+                    font-family: roboto, arial, sans-serif;
+                }
+
+                body {
+                    position: relative;
+                    height: 200vh;
+                    margin: 0;
+                }
+
+                .rect {
+                    position: absolute;
+                    top: 100vh;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    width: 10vw;
+                    height: 10vw;
+                    border: 2px solid black;
+                    z-index: 1;
+                    background-color: white;
+                }
+
+                .line {
+                    width: 100%;
+                    position: absolute;
+                    top: 100vh;
+                    border-top: 8px dashed black;
+                    transform: translate(0, -50%) ;
+                    
+                }
+
+
+            </style>
+
+    </head>
+    <body>
+        <div class="rect"></div>
+        <div class="line"></div>
+
+
+    </body>
+</html>

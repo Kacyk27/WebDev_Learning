@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Strona do nauki</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+        <style>
+            :root {
+                --textSize: 80px;
+            }
+
+            body {
+                /* position: relative; */
+                height: 90vh;
+            }
+            button {
+                font-size: 40px;
+            }
+
+            h1 {
+                position: absolute;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: var(--textSize);
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                transition: 1s;
+            }
+
+            /* .larger:hover~h1 {
+                font-size: calc(var(--textSize) * 2);
+            } */
+
+            h1.duzy {
+                font-size: calc(var(--textSize) * 2);
+            }
+
+            h1.maly {
+                font-size: calc(var(--textSize)/2)
+            }
+
+            h1.rama {
+                border: 15px solid royalblue;
+                border-radius: 20%;
+            }
+            /* .smaller:hover~h1 {
+                font-size: calc(var(--textSize)/2);
+            }
+            .border:hover~h1 {
+                border: 15px solid royalblue;
+                border-radius: 20%;
+            } */
+        </style>
+
+
+    </head>
+    <body>
+
+
+        <button class="larger">2xWiększy</button>
+        <button class="smaller">2xMniejszy</button>
+        <button class="border">Obramowanie</button>
+        <h1>Nazwa</h1>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            $(".larger").click(function(){
+                $("h1").toggleClass("duzy");
+            })
+            $(".smaller").click(function(){
+                $("h1").toggleClass("maly");
+            })
+            $(".border").click(function(){
+                $("h1").toggleClass("rama");
+            })
+        </script>
+
+    </body>
+</html>

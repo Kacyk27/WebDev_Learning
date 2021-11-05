@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day02</title>
+    
+        <style>
+
+            /* Tworzenie zmiennych powinno być w znaczniku html */
+            html {
+                --divNumber: 3;
+                --divHeight: calc(100vh/var(--divNumber));
+                --oddBgc: rgb(20,20,180);
+                --evenBgc: rgb(180,20,20);
+                --fontSizeDiv: 20px;
+                --width1: 400px;
+                --width2: 200px;
+            }
+
+            header {
+                height: calc(25vh + 100px); 
+                /* w calc musi być spacja */
+                background-color: chartreuse;
+                width: var(--width1);
+            }
+
+            main {
+                height: 10vh;
+                width: var(--width2);
+                background-color: royalblue;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Powtórzone:</h1>
+        <ol>
+            <li>Tła</li>
+            <li>Model pudełkowy i boxsizing</li>
+            <li>Właściwości position</li>
+            <li>Display</li>
+            <li>Normalizacja i reset CSS</li>
+            <li>Funkcja calc w CSS</li>
+            <li>Zmienne w CSS</li>
+        </ol>
+
+        <header></header>
+        <main></main>
+
+    </body>
+</html>

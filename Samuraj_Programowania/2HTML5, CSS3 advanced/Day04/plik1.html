@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Strona do nauki</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+        <style>
+            img {
+                width: 40%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                /* Powyżej prosty sposób pozycjonowania zdjęcia na środku - w 4 właściwościach. */
+                /* transform: rotate(0deg); */
+                /* transform: scale(-1,1);  Odbicie lustrzane */
+                /* transform: translate(100px, 200px); Przesunięcie, X i Y się nie dodają, jeśli w 2 osiach trzeba użyć samego translate */
+                /* transform: translateY(-100px) translateX(200px) scale(1.5) rotate(90deg); łączenie */
+                /* transform: skew(10deg, 10deg) translateX(100px); */
+                /* box-shadow: 0 0 5px 10px black; */
+
+
+                transition: 1s;
+            }
+
+            img:hover {
+                /* transform: rotate(360deg); */
+                transform: scale(1.5);
+            }
+
+            p {
+                width: 30vw;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                /* transform: scale(1.2) rotate(5deg); */
+            }
+        </style>
+        
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deserunt eos ut sint ea explicabo commodi consectetur sed. Quam illo autem ab consequatur hic dicta? Sapiente iure corrupti hic repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad consequatur obcaecati itaque nulla laudantium quasi animi laboriosam quibusdam cum, repudiandae voluptate voluptates laborum quos nihil commodi sunt eos nobis?
+        </p>
+        <!-- <img src="../images/cosmos2.jpg" alt="Kosmos"> -->
+
+        <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, laborum id vel, corporis ullam eius provident iusto perferendis, perspiciatis amet et pariatur consequuntur? Natus, voluptatibus aut blanditiis pariatur corrupti exercitationem?</p> -->
+
+
+    </body>
+</html>
