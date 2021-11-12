@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Walk</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .bell {
+                position: fixed;
+                bottom: 50px;
+                right: 50px;
+                width: 80px;
+                height: 80px;
+                border: 3px solid cadetblue;
+                border-radius: 50%;
+                font-size: 50px;
+                color: cadetblue;
+                text-align: center;
+                line-height: 80px;
+                cursor: pointer;
+            }
+
+            .bell i {
+                animation: rotate 0.5s linear infinite alternate;
+                transform-origin: 50% 0;
+                transition: 0.2s;
+            }
+
+            .bell:hover {
+                background-color: cadetblue;
+                transition: 0.2s;
+            }
+
+            .bell:hover i {
+                color: white;
+                animation-play-state: paused;
+
+            }
+
+            @keyframes rotate {
+                0% {
+                    transform: rotate(30deg);
+                }
+
+                100% {
+                    transform: rotate(-30deg);
+                }
+            }
+
+            
+
+        </style>
+
+    </head>
+    <body>
+        <div class="bell">
+            <i class="fas fa-bell"></i>
+        </div>
+    </body>
+</html>

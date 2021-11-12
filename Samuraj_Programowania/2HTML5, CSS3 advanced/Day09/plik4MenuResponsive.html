@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Strona do nauki</title>
+    <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków.">
+    <!--Must have-->
+    <meta name="keywords" content="Nauka, webdev">
+    <!--Nie wpływa na pozycję google-->
+    <meta name="robots" content="index, follow">
+    <!--noindex, nofollow (opcjonalnie)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+    <meta name="author" content="Kacper Dudek">
+    <!--Must have-->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        li {
+            flex-basis: 20%;
+            /* flex-shrink: 1; */
+        }
+
+        a {
+            display: block;
+            font-size: 22px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #444;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 20px;
+            
+
+
+        }
+
+        a:hover {
+            background-color: black;
+        }
+
+        @media (min-width:1025px) {
+            ul {
+                flex-direction: row;
+            }
+             a {
+                margin: 15px;
+             }
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Przycisk 1</a></li>
+            <li><a href="#">Przycisk 2</a></li>
+            <li><a href="#">Przycisk 3</a></li>
+            <li><a href="#">Przycisk 4</a></li>
+            <li><a href="#">Przycisk 5</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Strona do nauki</title>
+    <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków.">
+    <!--Must have-->
+    <meta name="keywords" content="Nauka, webdev">
+    <!--Nie wpływa na pozycję google-->
+    <meta name="robots" content="index, follow">
+    <!--noindex, nofollow (opcjonalnie)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+    <meta name="author" content="Kacper Dudek">
+    <!--Must have-->
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <p>Typy danych</p>   
+    <p class="description red" id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facilis facere officiis esse, incidunt sunt perspiciatis architecto fuga alias a?</p>
+    <p>Lorem 2</p> 
+    <p id="p2">Lorem, ipsum.</p>
+
+    <script>
+        // pobieranie elementów
+        var p = document.querySelector(".description");
+        var paragraph = document.querySelector("p");
+        var text = document.querySelector("p:nth-child(1)");
+
+        var myPage = document.querySelector("body");
+        document.body //referencja do elementu body, równoważność tego co jest wyżej.
+
+        var text = document.querySelector("body>p.description.red");
+
+        var item1 = document.getElementById("text");
+        var item2 = document.getElementById("p2");
+
+        // okno całej przeglądarki
+        console.log(window);
+
+        // reprezentacja całej strony
+        console.log(document);
+
+        // skrót do body
+        console.log(document.body);
+
+        //skrót do html
+        console.log(document.documentElement);
+
+        //skrót do kolekcji obrazków na stronie
+        console.log(document.images);
+        console.log(document.querySelectorAll("img"))
+
+        // Czego używać najczęściej?
+
+        // document.querySelector("element")
+        // document.querySelectorAll("element")
+
+    </script>
+
+
+    
+
+</body>
+
+</html>

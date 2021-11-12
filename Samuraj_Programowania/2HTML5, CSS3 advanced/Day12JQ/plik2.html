@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Strona do nauki</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div class="item1">Div Item1</div>
+        <div class="item2">Div Item2</div>
+        <div>Div Item1</div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, et reprehenderit beatae quisquam corrupti asperiores numquam! Consectetur quia maxime, explicabo tempore velit rem iure architecto eligendi voluptates repudiandae accusamus! Quos.
+        </p>
+        <p>Lorem, ipsum.</p>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script>
+            console.log($("*"));
+            console.log($("*").length);
+            $(document).ready(function () {
+                console.log($("*"));
+                console.log($("*").length);
+            })
+
+            // wersja skrócona
+            $(function () {
+                console.log($("*"));
+                console.log($("*").length);
+            })
+            $(function () {
+                console.log($("div"));
+                console.log($("div").length);
+                const $p = $("p")
+                console.log($p.text())
+            })
+
+        </script>
+    </body>
+</html>

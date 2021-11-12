@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Strona do nauki</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                display: flex;
+            }
+
+            .s1, .s2 {
+                flex-basis: 50%;
+                height: 100vh;
+                transition: 1s;
+            }
+            .red {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="s1 red"></div>
+        <div class="s2"></div>
+
+
+        <script>
+            var firstDiv = document.querySelector(".s1");
+            var secondDiv = document.querySelector(".s2");
+
+
+            function changeColor() {
+                firstDiv.classList.toggle("red");
+                secondDiv.classList.toggle("red");
+
+                // this.classList.toggle("red");
+            }
+
+            firstDiv.addEventListener("click", changeColor);
+            secondDiv.addEventListener("click", changeColor);
+
+        </script>
+    </body>
+</html>

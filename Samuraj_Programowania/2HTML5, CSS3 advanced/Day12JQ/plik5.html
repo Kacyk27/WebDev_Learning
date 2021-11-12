@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Strona do nauki</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+
+            }
+            body {
+                background-color: black;
+            }
+
+            section {
+                display: flex;
+                height: 64px;
+            }
+
+            div {
+                flex-grow: 1;
+                border: 2px solid black;
+                font-size: 60px;
+                line-height: 60px;
+                text-align: center;
+                cursor: pointer;
+                background-color: #fff;
+            }
+
+            .orange {
+                background-color: orange;
+            }
+            .green {
+                background-color: green;
+            }
+            
+            p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                text-transform: uppercase;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="orange interface"></div>
+            <div class="green interface"></div>
+            <div class="increase interface">+</div>
+            <div class="move interface">-></div>
+        </section>
+
+        <p class="text">Tekst</p>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script src="exercise.js"></script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Strona do nauki</title>
+    <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków.">
+    <!--Must have-->
+    <meta name="keywords" content="Nauka, webdev">
+    <!--Nie wpływa na pozycję google-->
+    <meta name="robots" content="index, follow">
+    <!--noindex, nofollow (opcjonalnie)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+    <meta name="author" content="Kacper Dudek">
+    <!--Must have-->
+
+    <style>
+        button {
+            padding: 10px;
+            font-size: 50px;
+            font-family: sans-serif;
+            background-color: transparent;
+            border: 2px solid black;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: #000;
+            position: fixed;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+        }
+    </style>
+</head>
+
+<body>
+    <button>Obróć</button>
+    <div class="square"></div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <a href="https://jbzd.com.pl">12312312312312</a>
+
+    <script>
+        // parametry główne. Za pomocą zmiennych stwórz początkową wartość rotate (zero) i wartość o którą będziesz zmieniał stopnie (o 10 stopnii).
+
+        let rotate = 0;
+        const deg = 10;
+
+
+        // pobieramy elementy - pobierz przycisk i div
+        const div = document.querySelector("div");
+        const btn = document.querySelector("button");
+        div.style.transition = 0.5+"s";
+
+        // podpinamy nasłuchiwanie i umeiszczamy w nim funkcje anonimową. Pamiętaj zmieniamy własciwość transform. Za każdym razie obrót zwiększa się od 10 deg. 
+        btn.addEventListener("click", function() {
+            rotate+=deg
+            div.style.transform = "rotate("+rotate+"deg)";
+            // div.classList.add("animation");
+        })
+
+
+
+        //Bonus dodaj właściwość transition dla div określoną na .5s.
+    </script>
+</body>
+
+</html>

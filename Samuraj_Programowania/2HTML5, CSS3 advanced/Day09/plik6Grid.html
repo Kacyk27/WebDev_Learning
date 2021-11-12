@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Strona do nauki</title>
+    <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków.">
+    <!--Must have-->
+    <meta name="keywords" content="Nauka, webdev">
+    <!--Nie wpływa na pozycję google-->
+    <meta name="robots" content="index, follow">
+    <!--noindex, nofollow (opcjonalnie)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+    <meta name="author" content="Kacper Dudek">
+    <!--Must have-->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            min-height: 100vh;
+            grid-template-columns: 1fr 300px;
+            grid-template-rows: 300px 50px 1fr 50px;
+            grid-template-areas:
+                "baner baner"
+                "menu menu"
+                "blog column"
+                "stopka stopka";
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+            color: white;
+        }
+
+        header {
+            background-color: olivedrab;
+            grid-area: baner;
+        }
+
+        nav {
+            background-color: orangered;
+            grid-area: menu;
+        }
+
+        main {
+            background-color: crimson;
+            grid-area: blog;
+        }
+
+        aside {
+            background-color: royalblue;
+            grid-area: column;
+        }
+
+        footer {
+            background-color: orchid;
+            grid-area: stopka;
+        }
+
+        @media (max-width:1024px) {
+            body {
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px 300px 2fr 1fr 50px;
+            grid-template-areas:
+                "menu"
+                "baner"
+                "blog" 
+                "column"
+                "stopka";
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <main>Główna treść</main>
+    <aside>Kolumna</aside>
+    <footer>Stopka</footer>
+
+</body>
+
+</html>

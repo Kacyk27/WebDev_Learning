@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flexbox - kluczowe właściwości i flex we flexie</title>
+    <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków.">
+    <!--Must have-->
+    <meta name="keywords" content="Nauka, webdev">
+    <!--Nie wpływa na pozycję google-->
+    <meta name="robots" content="index, follow">
+    <!--noindex, nofollow (opcjonalnie)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+    <meta name="author" content="Kacper Dudek">
+    <!--Must have-->
+
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 600px;
+            height: 400px;
+            margin: 100px auto;
+            font-size: 80px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #ddd;
+            color: white;
+            
+        }
+
+        div {
+            /* flex-basis: 400px; */
+            flex-shrink: 1;
+        }
+
+        .f1 {
+            background-color: darkcyan;
+            /* text-align: center; */
+            order: 0;
+            /* flex-grow: 3; */
+            /* flex-shrink: 2; */
+            flex-basis: 200px;
+            align-self: stretch;
+        }
+
+        .f2 {
+            background-color: darkred;
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+
+
+        }
+
+        .f3 {
+            order: 0;
+            background-color: darkolivegreen;
+            flex-grow: 0;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="f1">1</div>
+        <div class="f2">2</div>
+        <div class="f3">3</div>
+    </section>
+
+
+</body>
+
+</html>

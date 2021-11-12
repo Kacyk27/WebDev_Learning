@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Strona do nauki</title>
+    <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków.">
+    <!--Must have-->
+    <meta name="keywords" content="Nauka, webdev">
+    <!--Nie wpływa na pozycję google-->
+    <meta name="robots" content="index, follow">
+    <!--noindex, nofollow (opcjonalnie)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+    <meta name="author" content="Kacper Dudek">
+    <!--Must have-->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 20px 50px;
+        }
+
+        button {
+            border: 3px solid black;
+            text-transform: uppercase;
+            padding: 15px 20px;
+            font-size: 40px;
+            color: black;
+            background-color: transparent;
+            margin: 0 30px 30px 0;
+        }
+
+        .box {
+            float: left;
+            background-color: cadetblue;
+            width: 100px;
+            height: 100px;
+            animation: create 1s linear both;
+        }
+
+        @keyframes create {
+            0% {
+                width: 0;
+                height: 0;
+                transform: rotate(0);
+            }
+            100% {
+                width: 100px;
+                height: 100px;
+                transform: rotate(3600deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="js">Dawaj JS!</button>
+    <button class="jq">Dawaj JQ!</button>
+    <br>
+
+
+
+
+    <script>
+        const buttonJS = document.querySelector(".js");
+        const buttonJQ = document.querySelector(".jq");
+
+        function createDiv() {
+            const divItem = document.createElement("div");
+            // Sposoby dodawania klas.
+            // divItem.className = "box";
+            // divItem.classList.add("box");
+            divItem.setAttribute("class", "box");
+
+            document.body.appendChild(divItem);
+        }
+
+        buttonJS.addEventListener("click", createDiv)
+
+    </script>
+</body>
+
+</html>

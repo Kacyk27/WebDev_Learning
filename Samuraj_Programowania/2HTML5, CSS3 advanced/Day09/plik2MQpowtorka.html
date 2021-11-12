@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Strona do nauki</title>
+    <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków.">
+    <!--Must have-->
+    <meta name="keywords" content="Nauka, webdev">
+    <!--Nie wpływa na pozycję google-->
+    <meta name="robots" content="index, follow">
+    <!--noindex, nofollow (opcjonalnie)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+    <meta name="author" content="Kacper Dudek">
+    <!--Must have-->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            background-color: #ddd;
+            height: 100vh;
+
+        }
+
+        div {
+            flex-basis: 25%;
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+
+
+        @media (min-width: 641px) {
+            body {
+                background-color: royalblue;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            body {
+                background-color: goldenrod;
+            }
+        }
+
+        @media (orientation: portrait) {
+            body {
+                flex-direction: column;
+            }
+            div {
+                flex-basis: 50%;
+            }
+        }
+
+        @media (orientation:landscape) and (max-height:200px) {
+            div {
+                background-color: white;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+console.log("ok w zewnętrznym pliku")

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Strona do nauki</title>
+    <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków.">
+    <!--Must have-->
+    <meta name="keywords" content="Nauka, webdev">
+    <!--Nie wpływa na pozycję google-->
+    <meta name="robots" content="index, follow">
+    <!--noindex, nofollow (opcjonalnie)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+    <meta name="author" content="Kacper Dudek">
+    <!--Must have-->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            flex-basis: 10vh;
+            text-align: center;
+            line-height: 10vh;
+            background-color: #000;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        section {
+            /* jako element elastyczny */
+            flex-grow: 1;
+            /* kontener flex */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        section>div {
+            flex-basis: 21%;
+        }
+
+        section div img {
+            width: 100%;
+        }
+
+        @media (max-width: 1200px) {
+            section>div {
+                flex-basis: 45%;
+                padding: 50px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            section>div {
+                flex-basis: 45%;
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            section>div {
+                flex-basis: 45%;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 460px) {
+            section>div {
+                flex-basis: 100%;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>GALERIA</h1>
+    <section>
+        <div>
+            <img src="../images/img11.jpg" alt="">
+        </div>
+        <div>
+            <img src="../images/img22.jpg" alt="">
+        </div>
+        <div>
+            <img src="../images/img33.jpg" alt="">
+        </div>
+        <div>
+            <img src="../images/img44.jpg" alt="">
+        </div>
+   
+        <div>
+            <img src="../images/img11.jpg" alt="">
+        </div>
+        <div>
+            <img src="../images/img22.jpg" alt="">
+        </div>
+        <div>
+            <img src="../images/img33.jpg" alt="">
+        </div>
+        <div>
+            <img src="../images/img44.jpg" alt="">
+        </div>
+    </section>
+   </body>
+   
+   </html>
