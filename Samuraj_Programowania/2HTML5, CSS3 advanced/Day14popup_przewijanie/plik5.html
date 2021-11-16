@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Strona do nauki</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .sekcja1 {
+                background-color: cadetblue;
+                height: 100vh;
+            }
+            .sekcja2 {
+                background-color: royalblue;
+                height: 500px;
+            }
+            .sekcja3 {
+                background-color: darkmagenta;
+                height: 1290px;
+            }
+            .sekcja4 {
+                background-color: burlywood;
+                height: 150vh;
+            }
+
+            .info {
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 70px;
+                width: 100%;
+                box-shadow: 0 0 3px 3px grey;
+                background-color: #ddd;
+                font-size: 30px;
+                line-height: 70px;
+                text-align: center;
+                transition: 0.8s;
+                text-transform: uppercase;
+            }
+
+
+            
+
+        </style>
+    </head>
+    <body>
+
+        <section class="sekcja1"></section>
+        <section class="sekcja2"></section>
+        <section class="sekcja3"></section>
+        <section class="sekcja4"></section>
+        <div class="info">Witaj na stronie</div>
+
+
+
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+        <script>
+            const txt = document.querySelector("div.info");
+            function changeText() {
+                // console.log("działa")
+                const wielkoscScrolla = window.scrollY;
+                // console.log(wielkoscScrolla);
+                const wysokoscSekcji1 = document.querySelector(".sekcja1").clientHeight;
+                const wysokoscSekcji2 = document.querySelector(".sekcja2").clientHeight;
+                const wysokoscSekcji3 = document.querySelector(".sekcja3").clientHeight;
+                const wysokoscSekcji4 = document.querySelector(".sekcja4").clientHeight;
+
+
+                const odlegloscOdPoczatkuSekcji1 = document.querySelector(".sekcja1").offsetTop
+                const odlegloscOdPoczatkuSekcji2 = document.querySelector(".sekcja2").offsetTop
+                const odlegloscOdPoczatkuSekcji3 = document.querySelector(".sekcja3").offsetTop
+                const odlegloscOdPoczatkuSekcji4 = document.querySelector(".sekcja4").offsetTop
+                
+
+                if (wielkoscScrolla < wysokoscSekcji1) {
+                    txt.textContent = "sekcja1"
+                }
+                else if (wielkoscScrolla < wysokoscSekcji2 + odlegloscOdPoczatkuSekcji2) {
+                    txt.textContent = "sekcja2"
+                }
+                else if (wielkoscScrolla < wysokoscSekcji3 + odlegloscOdPoczatkuSekcji3) {
+                    txt.textContent = "sekcja3"
+                }
+                else {
+                    txt.textContent = "sekcja4"
+                }
+            }
+
+            window.addEventListener("scroll", changeText)
+
+
+
+
+        </script>
+
+    </body>
+</html>

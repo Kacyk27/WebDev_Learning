@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Strona do nauki</title>
+    <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków.">
+    <!--Must have-->
+    <meta name="keywords" content="Nauka, webdev">
+    <!--Nie wpływa na pozycję google-->
+    <meta name="robots" content="index, follow">
+    <!--noindex, nofollow (opcjonalnie)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+    <meta name="author" content="Kacper Dudek">
+    <!--Must have-->
+
+    <style>
+        .article {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .article.blur {
+            filter: blur(3px);
+        }
+
+        img {
+            padding: 50px 0;
+            width: 100%;
+        }
+
+        .modal-wrap {
+            display: none;
+        }
+        
+        .modal-wrap.active {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-wrap.active .modal {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 70%;
+            background-color: black;
+            border: 2px solid black;
+            /* border-radius: 20px; */
+        }
+        
+        @media (max-width:800px) {
+            .modal-wrap.active .modal {
+                width: 90%;
+                height: 90%;
+            }
+        }
+
+        .modal .top {
+            background-color: cadetblue;
+            flex-basis: 15%;
+        }
+
+        .modal .middle {
+            background-color: gray;
+            flex-grow: 1;
+        }
+
+        .modal .bottom {
+            background-color: cadetblue;
+            flex-basis: 15%;
+        }
+
+        .modal .hide {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translate(50%, -50%);
+            background-color: white;
+            border-radius: 50%;
+            border: 2px solid black;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <section class="article">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto a facere autem neque praesentium. Eligendi iure nam tempore quam tenetur obcaecati, laudantium optio natus soluta sapiente quis minus rem repudiandae!</p>
+        <button>Kup teraz</button>
+        <img src="../images/cosmos2.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus explicabo, provident dolore natus voluptate odio sequi excepturi placeat sint delectus perspiciatis eum tempore perferendis voluptatum dolorem non rerum, praesentium culpa!</p>
+    </section>
+
+    <section class="modal-wrap">
+        <div class="modal">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+            <span class="hide">X</span>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // JQuery
+        // $(".article button").on("click", function() {
+        //     $(".modal-wrap").addClass("active")
+        //     $(".article").addClass("blur")
+        // })
+        // $(".modal .hide").on("click", function() {
+        //     $(".modal-wrap").removeClass("active")
+        //     $(".article").removeClass("blur")
+        // })
+
+        // Czysty JS
+        const btnModal = document.querySelector(".article button")
+        btnModal.addEventListener("click", function() {
+            document.querySelector(".modal-wrap").classList.add("active");
+            document.querySelector(".article").classList.add("blur")
+        })
+
+
+        const hider = document.querySelector(".modal .hide")
+        hider.addEventListener("click", function() {
+            document.querySelector(".modal-wrap").classList.remove("active");
+            document.querySelector(".article").classList.remove("blur")
+        })
+    </script>
+</body>
+
+</html>
