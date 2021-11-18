@@ -1,0 +1,5 @@
+@mixin boxing($directions,$justify) {
+    display: flex;
+    flex-direction: $directions;
+    justify-content: $justify;
+}
