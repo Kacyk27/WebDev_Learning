@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Strona do nauki</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+        
+
+    </head>
+    <body>
+
+
+
+        <script>
+            let red = 100;
+            let green = 100;
+            let blue = 100;
+
+            document.body.style.backgroundColor = `rgb(${red},${green},${blue})`
+
+            const changeColor = (e) => {
+                console.log(e.keyCode);
+                //38 -gora 40-dol
+
+                //Wersja I - IF
+                // if (e.keyCode === 38) {
+                //     if (red<255) {
+                //         red+=2;
+                //         green+=2;
+                //         blue+=2;
+                //     }
+                    
+                // }
+                // else if (e.keyCode ===40) {
+                //     if (red >=0){
+                //         red -=2;
+                //         green -=2;
+                //         blue -=2;
+                //     }
+                // }
+                // document.body.style.backgroundColor = `rgb(${red},${green},${blue})`
+
+
+                //Wersja II - SWITCH
+                switch (e.keyCode) {
+                    case 38:
+                        document.body.style.backgroundColor = `rgb(${red<= 255 ?red++ : red},${green<= 255 ? green++ : green},${blue <= 255 ? blue++ : blue})`;
+                        break;
+                    case 40:
+                        document.body.style.backgroundColor = `rgb(${red>=0 ? red-- : red},${green>=0 ? green-- : green},${blue>=0 ? blue-- : blue})`;
+                        break;
+                }
+
+            }
+
+            window.addEventListener('keydown', changeColor)
+
+        </script>
+    </body>
+</html>

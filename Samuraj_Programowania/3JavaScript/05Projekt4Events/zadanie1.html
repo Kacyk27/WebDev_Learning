@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Strona do nauki</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+            }
+
+        </style>
+        
+
+    </head>
+    <body>
+
+
+
+        <script>
+            // rozwiązanie I
+            // document.body.addEventListener('click', function(e) {
+            //     const x = e.clientX;
+            //     const y = e.clientY;
+
+            //     if (x%2 == 0 && y%2 === 0) {
+            //         document.body.style.backgroundColor = 'rgb(255,0,0)'
+            //     }
+            //     else if ((x%2 == 1 && y%2 === 1)) {
+            //         document.body.style.backgroundColor = 'rgb(0,0,255)'
+            //     }
+            //     else {
+            //         document.body.style.backgroundColor = 'rgb(0,255,0)'
+            //     }
+            // })
+
+            //rozwiązanie II
+            document.body.addEventListener('click', (event) => {
+                console.log(event.clientX, event.clientY);
+                const color = getColor(event);
+                document.body.style.backgroundColor = color;
+            })
+
+            const getColor = (e) => {
+                if (e.clientX % 2 === 0 && e.clientY % 2 === 0) {
+                    return 'red'
+                }
+                else if (e.clientX % 2 === 1 && e.clientY % 2 === 1) {
+                    return "blue"
+                }
+                else {
+                    return "green"
+                }
+            }
+
+        </script>
+    </body>
+</html>

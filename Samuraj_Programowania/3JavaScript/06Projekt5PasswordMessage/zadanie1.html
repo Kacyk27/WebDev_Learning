@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Strona do nauki</title>
+        <meta name="description" content="Ten opis jest pod tytułem strony.
+        Powinien zawierać do 150 znaków."> <!--Must have-->
+        <meta name="keywords" content="Nauka, webdev"> <!--Nie wpływa na pozycję google-->
+        <meta name="robots" content="index, follow"> <!--noindex, nofollow (opcjonalnie)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Powyższy metatag mówi, że strona została przygotowana również pod telefony (responsywność).-->
+        <meta name="author" content="Kacper Dudek"> <!--Must have-->
+
+        <style>
+            body {
+                margin: 5vh;
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            label,
+            input {
+                height: 40px;
+                line-height: 40px;
+                font-size: 30px;
+            }
+            div {
+                border: 2px solid black;
+                font-size: 40px;
+                margin: 20px;
+            }
+
+            .active {
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <label for="pass">Wprowadź hasło: </label><input id='pass' type="password">
+        <div class="message"></div>
+
+
+
+        <script>
+            const input = document.querySelector('input');
+            const passwords = ['jedEN','DwA'];
+            const messages = ['super','działa!'];
+
+            // passwords.forEach((item,index) => {
+            //     passwords[index] = item.toLowerCase();
+            // }) //zmiana wartości wewnątrz tablicy - możliwa pomimo że tablica to const
+
+
+            // Wersja I
+            // const showMessage = (e) => {
+            //     const div = document.querySelector('div');
+            //     div.textContent = '';
+
+            //     const text = e.target.value.toLowerCase();
+                
+            //     passwords.forEach((password,index)=> {
+            //         if (text === password.toLowerCase()) {
+            //             div.textContent = messages[index];
+            //         }
+            //     })
+            // }
+
+            // Wersja II - metoda map
+            const LCPasswords = passwords.map(password => password.toLowerCase()); //zwraca wartość, foreach nie zwraca
+
+            const showMessage = (e) => {
+                const textInput = e.target.value.toLowerCase();
+                document.querySelector('div').textContent = ''
+
+                for(let i=0; i<LCPasswords.length; i++) {
+                    if (textInput === LCPasswords[i]) {
+                        document.querySelector('div').textContent = messages[i]
+                    }
+                }
+            }
+
+            input.addEventListener('input', showMessage)
+
+
+
+
+        </script>
+    </body>
+</html>
